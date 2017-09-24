@@ -52,7 +52,7 @@
     "typescript": "2.4.1",
     "typings": "2.1.1",
     "webpack": "1.13.1",
-    "webpack-fail-plugin": "1.0.5",
+    "webpack-fail-plugin": "1.0.5"
   },
   "jest": {
     "moduleFileExtensions": [

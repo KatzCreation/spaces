@@ -4,19 +4,19 @@ import * as redux from 'redux'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 
-import * as state from './reducers'
+import * as state from './state'
 
-import { Counter } from './components/counter'
+import { CounterView } from './counter/counter-view'
 
-const store: redux.Store<state.All> = redux.createStore(
+const store: redux.Store<state.GlobalState> = redux.createStore(
   state.reducers,
-  {} as state.All,
+  {} as state.GlobalState,
   redux.applyMiddleware(thunk),
 )
 
 const Root: React.SFC<{}> = () => (
   <Provider store={store}>
-    <Counter />
+    <CounterView />
   </Provider>
 )
 

@@ -2,7 +2,7 @@ var failPlugin = require('webpack-fail-plugin');
 
 // https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
 module.exports = {
-  entry: './src/index.tsx',
+  entry: './src/boot.tsx',
   output: {
     filename: './dist/bundle.js',
   },
