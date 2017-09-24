@@ -19,6 +19,10 @@
   "typings": "typings/index.d.ts",
   "author": "Spencer Tank",
   "dependencies": {
+    "@types/d3": "^4.10.0",
+    "@types/leaflet": "^1.2.0",
+    "d3": "^4.10.2",
+    "leaflet": "^1.2.0",
     "react": "15.6.1",
     "react-redux": "5.0.5",
     "redux": "3.6.0",
