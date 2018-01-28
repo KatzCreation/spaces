@@ -1,0 +1,48 @@
+.sidebar-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 400px;
+    background-color: lightgray;
+    border-right: 1px solid grey;
+    display: flex;
+
+    .sidebar
+    {
+        padding: 20px;
+        flex: 1;
+    }
+}
+
+.content-wrapper {
+    position: absolute;
+    left: 400px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    overflow-y: scroll;
+    &::-webkit-scrollbar { 
+        display: none; 
+    }
+
+    .background-div 
+    {
+        background-color: red;
+        border: 1px solid orange;
+    }
+
+    .content-scroll
+    {
+        flex: 1;
+        height: 100000px;
+        z-index: 1;
+    }
+}
